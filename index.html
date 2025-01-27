@@ -38,11 +38,60 @@
     </header>
 
   <section id="home" class="home">
-      <h1>Bring your Business Online</h1>
-      <h2>with Abhay Services</h2>
-    <div class="wave wave1"></div>
-    <div class="wave wave2"></div>
-    <div class="wave wave3"></div>
+    <div id="card" class="card border-light mb-3"
+    style="max-width: 40rem; max-height: 80rem; background-color: #333; 
+           border-radius: 15px; 
+           overflow: hidden; 
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+           position: fixed; 
+           top: 50%; 
+           right: 100px; 
+           transform: translateY(-50%); 
+           transition: box-shadow 0.4s ease-in-out; 
+           z-index: 999;">
+ 
+   <div class="card-header" style="background-color: black; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+       <h1 style="color: white; background-color: black;">CloudsForge</h1>
+   </div>
+
+   <div class="card-body">
+       <h4 style="color: white;">
+           We are an IT services and IT consultancy that specializes in creating innovative solutions for businesses. We are passionate about technology and believe in the power of software to transform the world. Our internship program is just one of the ways in which we are investing in the future of the industry.
+       </h4>
+
+       <h4 style="color: white;">
+           At CloudsForge, we believe practical knowledge is the key to success in the tech industry. Our aim is to help students lacking basic skills by offering hands-on learning through live projects and real-world examples.
+       </h4>
+   </div>
+</div>
+
+<script>
+   var card = document.getElementById('card');
+
+   // Apply hover effect when mouse enters
+   card.addEventListener('mouseenter', function() {
+       card.style.boxShadow = '0 0 100px 30px rgba(0, 255, 255, 0.8)';
+       card.style.transform = 'scale(1.05)'; // Optional: enlarge card on hover
+   });
+
+   // Reset hover effect when mouse leaves
+   card.addEventListener('mouseleave', function() {
+       card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.3)';
+       card.style.transform = 'scale(1)';
+   });
+
+   // Scroll event to hide the card when scrolling down
+   window.addEventListener('scroll', function() {
+       var scrollPosition = window.scrollY; // Get the scroll position
+       if (scrollPosition > 100) { // When scrolled 100px down, hide the card
+           card.style.display = 'none';
+       } else {
+           card.style.display = 'block'; // Show the card if scrolled back up
+       }
+   });
+</script>
+
+
   </section>
 
   <section id="about" class="about">
@@ -117,124 +166,119 @@
 
 <div class="pt-5 pb-5">
     <div class="container">
-      <div class="row">
-        <div class="section-head-1 col-sm-12" style="text-align: center;">
-          <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
-          
-          <p>The objective of Abhay Services is to enable a large number of youth to take up <br>industry-relevant skill training that will help them<br> in securing a better livelihood.
-            </p>
-        </div>
-        
-        <div class="col-lg-4 col-sm-6">
-          
-          <div class="item"> <span class="icon feature_box_col_four"><i class="fa fa-database"></i></span>
-            <h6>Project-1</h6>
+        <div class="row">
+            <div class="section-head-1 col-sm-12" style="text-align: center;">
+                <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
+                <p>The objective of Cloudsforge is to build innovative IT solutions that empower businesses and individuals alike. Explore our featured projects below.</p>
+            </div>
             
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>
-          </div>
+            <!-- Project 1: NFC Payment Solutions -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="item"> 
+                    <span class="icon feature_box_col_four"><i class="fa fa-credit-card"></i></span>
+                    <h6>NFC Payment Solutions</h6>
+                    <p>We developed a cutting-edge NFC payment system for PayTech Global that allows businesses to integrate seamless contactless payments, offering enhanced security and customer convenience across physical and online stores.</p><br><br>
+                </div>
+            </div>
+
+            <!-- Project 2: Healthcare Management Platform -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="item"> 
+                    <span class="icon feature_box_col_five"><i class="fa fa-hospital"></i></span>
+                    <h6>Healthcare Management Platform</h6>
+                    <p>For Health360, we built an all-in-one healthcare platform integrating appointment bookings, telehealth consultations, real-time health tracking, and AI-powered prescriptions, all tailored to improve patient experiences.</p><br><br>
+                </div>
+            </div>
+
+            <!-- Project 3: Automated Tax Filing System -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="item"> 
+                    <span class="icon feature_box_col_six"><i class="fa fa-file-invoice"></i></span>
+                    <h6>Automated Tax Filing System</h6>
+                    <p>We created an AI-driven tax filing system for TaxPro that simplifies tax preparation and filing for both individuals and businesses, using smart algorithms for automatic deductions and instant tax report generation.</p><br><br>
+                </div>
+            </div>
         </div>
-        
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_five"><i class="fa fa-upload"></i></span>
-            <h6>Project-2</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-6">
-          <div class="item"> <span class="icon feature_box_col_six"><i class="fa fa-camera"></i></span>
-            <h6>Project-3</h6>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.<br><br><br></p>
-          </div>
-        </div>
-      </div>
     </div>
 </div>
 
-<div class="communicate">
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <a href="#contact"><button class="btn">Contact Now</button></a>
+
+<div class="communicate" style="background-color: #ffffff; padding: 50px 20px; text-align: center; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
+    <h3 style="font-size: 2rem; font-weight: bold; color: white; margin-bottom: 20px;">
+        Let's Create Something Extraordinary Together
+    </h3>
+    <p style="font-size: 1.2rem; color: #c4acac; margin-bottom: 30px;">
+        Ready to turn your vision into reality? Contact us today to get started on your next big idea!
+    </p>
+    <a href="#contact">
+        <button class="btn" style="background-color: #FF5733; color: #ffffff; padding: 12px 30px; font-size: 1.2rem; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; transition: all 0.3s; text-transform: uppercase;">
+            Contact Now
+        </button>
+    </a>
 </div>
 
-<div class="testimonials mt-100">
+
+<div class="pt-5 pb-5">
     <div class="container">
-        <div class="section-header" style="text-align: center;">
-            <h2 style="margin-top: -15rem;">Testimonials</h2>
-            <p style="font-size: 2rem;">
-                See what people have to say about us
-            </p>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel">
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-1.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-1</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
+        <div class="row">
+            <div class="section-head-1 col-sm-12" style="text-align: center;">
+                <h4 style="margin-top: -5rem;" id="testimonials"><span>Our</span> Partners</h4>
+                <p>We are proud to work with some of the top businesses and organizations in the industry. Our partners trust us to deliver high-quality, innovative solutions.</p>
             </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-2.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-2</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
 
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-3.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-3</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-4.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-4</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item row align-items-center">
-                <div class="testimonial-img">
-                    <img src="./images/testimonial-5.jpg" alt="Testimonial image">
-                </div>
-                <div class="testimonial-text">
-                    <h3>Person-5</h3>
-                    <h4>Designation</h4>
-                    <p>
-                        Testimonial
-
-                    </p>
+            <!-- Company Logos Section -->
+            <div class="col-sm-12">
+                <div class="row text-center">
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://www.health360.in/images/health360-logo.png" alt="Health360 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://messaging.digital/wp-content/uploads/2023/12/TaxPro-Logo.png" alt="TaxPro Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://messaging.digital/wp-content/uploads/2023/12/messaging.digital-Black-Logo.png" alt="PayTech Global Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <!-- Add more company logos here -->
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://static.wixstatic.com/media/70f979_d80ac445bcdf4162ac3f88e6856bf45f~mv2.png/v1/fill/w_1120,h_444,al_c,lg_1,q_90,enc_avif,quality_auto/70f979_d80ac445bcdf4162ac3f88e6856bf45f~mv2.png" alt="Company 4 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://globaltech-innovations.com/wp-content/uploads/2024/05/GTI-Logo-02-1.png" alt="Company 5 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://static.wixstatic.com/media/0d2b02_cbd035d9a902491fb974b53c42c53bb9~mv2.png/v1/fill/w_862,h_242,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/0d2b02_cbd035d9a902491fb974b53c42c53bb9~mv2.png" alt="Company 6 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://static.wixstatic.com/media/3f5df0_7bcce21b79c44f8fbf8025a0663048be~mv2.png/v1/fill/w_542,h_178,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Horizontal.png" alt="Company 7 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://www.ocuco.com/images/logo/logo.svg?v=HrBZnQ8bb5XZRCvc82UfLVwUTSfkO3w-bEAt1smmvgA" alt="Company 8 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://www.optihealth.be/images/logo-org.png" alt="Company 9 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://www.greentecsystems.com/wp-content/uploads/2017/01/Greentec-Systems-Logo-Full-New-white-beige.png" alt="Company 10 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="http://4loyalty.com/wp-content/uploads/2017/06/SmartTech_Logo_whiteTransparent.png" alt="Company 11 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://digitalwavesolutions.in/wp-content/uploads/2024/10/Colourful_Wave_Painting_Logo___1_-removebg-preview-e1729054012309.png" alt="Company 12 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://www.bytecrafts.in/assets/logo.png" alt="Company 13 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <img src="https://cdn.prod.website-files.com/64a8b53c04ca7c8ef6fa1dff/64adb15885da1d25d670090d_securedata-p-500.png" alt="Company 14 Logo" class="img-fluid" style="max-height: 100px;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<!-- 
 <div class="clients mt-100">
     <div class="container">
         <div class="section-header">
@@ -254,7 +298,7 @@
             <img src="./images/image.png" alt="Client Logo">
         </div>
     </div>
-</div>
+</div> -->
 <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>
@@ -266,95 +310,88 @@
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
 <section class="team" style="margin-top: 7rem;">
-  <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>
+  <h1 class="heading" style="margin-top: -1.5rem;" id="team">Our Leads</h1>
   <p></p>
   <div class="row">
       <div class="card">
           <div class="image">
-              <img src="./images/pexels-andrea-piacquadio-845434.jpg" alt="Team member 1">
+              <img src="https://www.asmaindia.in/all_events/wp-content/uploads/2021/09/Prof.__Dr.__Abhay_Kumar.jpg" alt="Team member 1">
           </div>
           <div class="info">
-              <h3>Schott Watkins</h3>
-              <span>Web Developer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
+              <h3>Nithin Kumar</h3>
+              <span>Chief Technology Officer</span>
+      
           </div>
       </div>
   </div>
   <div class="row">
       <div class="card">
           <div class="image">
-              <img src="./images/pexels-vinicius-wiesehofer-1130624.jpg" alt="Team member 1">
+              <img src="https://media.licdn.com/dms/image/v2/D4D03AQEl_9z8U3H14Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1702622890085?e=2147483647&v=beta&t=b8FukqgC550kQhaBmXqa9khDtHQut_5kNs-SIuee3P0" alt="Team member 1">
           </div>
           <div class="info">
-              <h3>Nicole Bell</h3>
-              <span>Mobile Developer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
+              <h3>Bhavyesh</h3>
+              <span>Founder & CEO</span>
+       
           </div>
       </div>
   </div>
   <div class="row">
       <div class="card">
           <div class="image">
-              <img src="./images/pexels-hussein-altameemi-2776353.jpg" alt="Team member 1">
+              <img src="https://avatars.githubusercontent.com/u/24988810?v=4" alt="Team member 1">
           </div>
           <div class="info">
-              <h3>John Doe</h3>
-              <span>Graphic Designer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
+              <h3>Sai Reddy</h3>
+              <span> Chief Human Resource</span>
+           
           </div>
       </div>
   </div>
-  <div class="row">
-      <div class="card">
-          <div class="image">
-              <img src="./images/pexels-andrea-piacquadio-745136.jpg" alt="Team member 1">
-          </div>
-          <div class="info">
-              <h3>Rose Matthews</h3>
-              <span>Web Designer</span>
-              <div class="icons">
-                  <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
-                  <a href="https://twitter.com/login" class="fab fa-twitter"></a>
-                  <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
-                  <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
-              </div>
-          </div>
-      </div>
-  </div>
+
 </section>
 
 <section id="contact" class="contact">
-    <h1 class="heading">get in touch</h1>
+    <h1 class="heading">Get in Touch</h1>
 </section>
 <div class="contact-in">
     <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711243.17762776!2d64.4398422293091!3d20.011408266548177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1644684739958!5m2!1sen!2sin" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1752.7100174644523!2d77.35483525823888!3d28.618240099483245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb03a20451b1%3A0x25844d09a3087699!2sB-102%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1700465521525!5m2!1sen!2sin" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
     </div>
     <div class="contact-form">
-        <form action="./contactme.php" method="POST">
+        <form id="contact-form" action="" method="POST">
             <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone">
             <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
             <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
             <input type="submit" value="Submit" name="submit" class="contact-form-btn">
         </form>
+        <!-- Confirmation message will be shown after submit -->
+        <div id="confirmation-message" style="display: none;">
+            <p>Thank you for contacting us! We will get back to you soon.</p>
+        </div>
     </div>
-    </div>
+</div>
+
+<!-- Optional: JS to simulate the form submission -->
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the actual form submission
+        // Show the confirmation message
+        document.getElementById("confirmation-message").style.display = "block";
+        // Optionally reset the form
+        document.getElementById("contact-form").reset();
+    });
+</script>
+
+
 
     <section class="faq">
       <h1 class="heading" style="margin-top: -2rem; color: #00bfff;" id="faq">FAQ</h1>
@@ -444,32 +481,44 @@
                   </div>
 
                   <div class="col-lg-3 col-md-6 footer-contact" style="font-size: 1.5rem;">
-                      <h4>Contact Us</h4>
-                      <p>
-                          1300  Center Avenue<br>
-                          Fresno, California<br>
-                          United States <br>
-                          <strong>Phone:</strong> +123-456-7890<br>
-                          <strong>Email:</strong> info@example.com<br>
-                      </p>
-
-                      <div class="social-links">
-                          <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
-                          <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
-                          <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
-                          <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
-                          <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
-                      </div>
-
-                  </div>
+                    <h4>Contact Us</h4>
+                    <p>
+                        B-102, Sector 62<br>
+                        Noida, Uttar Pradesh<br>
+                        India - 201301<br>
+                        <strong>Email:</strong> contact@cloudsforge.in<br>
+                    </p>
+                </div>
+                
 
                   <div class="col-lg-3 col-md-6 footer-newsletter">
-                      <h4>Subscription</h4>
-                      <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
-                      <form action="" method="post">
-                          <input type="email" name="email"><input type="submit"  value="Subscribe">
-                      </form>
-                  </div>
+                    <h4>Subscription</h4>
+                    <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
+                    <form id="subscriptionForm" onsubmit="subscribe(event)">
+                        <input type="email" name="email" id="emailInput" placeholder="Enter your email" required>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <p id="subscriptionMessage" style="color: green; display: none; margin-top: 10px;">Subscribed successfully!</p>
+                </div>
+                
+                <script>
+                    function subscribe(event) {
+                        event.preventDefault(); // Prevent form submission
+                        const emailInput = document.getElementById("emailInput");
+                        const message = document.getElementById("subscriptionMessage");
+                        
+                        if (emailInput.value) {
+                            // Show success message
+                            message.style.display = "block";
+                            
+                            // Optional: Clear email input
+                            emailInput.value = "";
+                        } else {
+                            alert("Please enter a valid email address.");
+                        }
+                    }
+                </script>
+                
 
               </div>
           </div>
@@ -478,7 +527,7 @@
       <div class="container">
           <div class="row align-items-center">
               <div class="col-md-6 copyright" style="color: #fff; font-size: 1.3rem;">
-                  Copyright &copy; 2021 IT Company Website. All Rights Reserved.
+                  Copyright &copy; 2023 IT CloudsForge. All Rights Reserved.
               </div>
           </div>
       </div>
